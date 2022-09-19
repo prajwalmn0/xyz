@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>SIGNUP PAGE</title>
+    </head>
+    <body>
+        <h1>SIGNUP PAGE</h1>
+        <h1>ENTER DETAILS TO CREATE DETAILS</h1>
+        <form action="signup" method="post">
+            {% csrf_token %}
+            <label>FIRST NAME</label>
+            <input type="text" name='fname'>
+            <br>            
+            <label>LAST NAME</label>
+            <input type="text" name='lname'>
+            <br>
+            <label>USER NAME</label>
+            <input type="text" name='uname'>
+            <br>
+            <label>E-MAIL</label>
+            <input type="email" name='email'>
+            <br>
+            <label>PASSWORD</label>
+            <input type="password" name='password'>
+            <br>
+            <input type='submit'>
+        </form>
+    </body>
+</html>
